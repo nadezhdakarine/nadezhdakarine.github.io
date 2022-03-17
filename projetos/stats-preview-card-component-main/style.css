@@ -1,0 +1,110 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  margin: 5rem 1rem 0 1rem;
+  height: 100vh;
+}
+.imagem {
+  width: 100%;
+  height: 257px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: hsl(277, 64%, 61%);
+  background-image: url(images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#imagemHeaderdDesktop {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  padding: 2rem;
+  text-align: center;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0 2rem 0;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.textoPrincipal {
+  margin-bottom: 2rem;
+}
+
+.stat p {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.attribution {
+  margin-top: 8rem;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 56%, 56%);
+}
+
+@media screen and (min-width: 1100px) {
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  .imagem {
+    width: 565px;
+    height: 450px;
+    background-color: hsl(277, 64%, 61%);
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+  .card {
+    display: flex-box;
+    width: 30%;
+    padding: 3rem 6rem 3rem 3rem;
+    text-align: left;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.25rem;
+  }
+
+  .stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .stat {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+  }
+}
